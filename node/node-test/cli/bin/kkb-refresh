@@ -1,0 +1,9 @@
+#!/usr/bin/env node
+const program=require('commander')
+const {refresh}=require('../lib/refresh')
+program
+	.action(()=>{
+		console.log('refresh ... ')
+		refresh()
+	})
+program.parse(process.argv)
